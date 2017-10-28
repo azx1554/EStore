@@ -6,11 +6,11 @@ import javax.servlet.ServletContextListener;
 public class ContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
-		System.out.println("app contextInitialized");
+		System.out.println("backgroud contextInitialized");
 	}
 
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
-		System.out.println("app contextDestroyed");
+		System.out.println("backgroud contextDestroyed");
 	}
 }

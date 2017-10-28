@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mg.background.sys.dao.ISysUserDAO">
+    <sql id="select_column_sql">
+        select
+        id as id,
+        nick as nick,
+        password as password,
+        username as username,
+        mobile as mobile
+        from e_sys_user
+    </sql>
+
+    <sql id="condition_sql">
+        <where>
+            <if test = "id != null">
+                and id = #{id}
+            </if>
+            <if test = "nick != null and nick != ''">
+                and nick = #{nick}
+            </if>
+            <if test = "password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test = "username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test = "mobile != null and mobile != ''">
+                and mobile = #{mobile}
+            </if>
+        </where>
+    </sql>
+
+    <select id="findList" parameterType="SysUser" resultType="SysUser">
+        <include refid="select_column_sql" />
+        <include refid="condition_sql" />
+        order by id desc
+    </select>
+
+    <select id="find" parameterType="java.lang.Long" resultType="SysUser">
+        <include refid="select_column_sql" />
+        where id = #{0}
+    </select>
+
+    <select id="findSelective" parameterType="SysUser" resultType="SysUser">
+        <include refid="select_column_sql" />
+        <include refid="condition_sql" />
+    </select>
+
+    <select id="getCount" parameterType="SysUser" resultType="java.lang.Integer">
+        select count(id) from e_sys_user
+        <include refid="condition_sql" />
+    </select>
+
+    <insert id="insert" parameterType="SysUser" useGeneratedKeys="true" keyProperty="id">
+        insert into e_sys_user(
+        nick,
+        password,
+        username,
+        mobile
+        )values(
+        #{nick},
+        #{password},
+        #{username},
+        #{mobile}
+        )
+    </insert>
+
+    <insert id="insertSelective" parameterType="SysUser" useGeneratedKeys="true" keyProperty="id">
+        insert into e_sys_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test = "nick != null and nick != ''">
+                nick,
+            </if>
+            <if test = "password != null and password != ''">
+                password,
+            </if>
+            <if test = "username != null and username != ''">
+                username,
+            </if>
+            <if test = "mobile != null and mobile != ''">
+                mobile,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test = "nick != null and nick != ''">
+                #{nick},
+            </if>
+            <if test = "password != null and password != ''">
+                #{password},
+            </if>
+            <if test = "username != null and username != ''">
+                #{username},
+            </if>
+            <if test = "mobile != null and mobile != ''">
+                #{mobile},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="SysUser">
+        update e_sys_user
+        <set>
+            nick = #{nick},
+            password = #{password},
+            username = #{username},
+            mobile = #{mobile},
+        </set>
+        where id = #{id}
+    </update>
+
+    <update id="updateSelective" parameterType="SysUser">
+        update e_sys_user
+        <set>
+            <if test = "nick != null and nick != ''">
+                nick = #{nick},
+            </if>
+            <if test = "password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test = "username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test = "mobile != null and mobile != ''">
+                mobile = #{mobile},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from e_sys_user where id = #{0}
+    </delete>
+
+    <delete id="deleteSelective" parameterType="SysUser">
+        delete from e_sys_user
+        <include refid="condition_sql" />
+    </delete>
+</mapper>

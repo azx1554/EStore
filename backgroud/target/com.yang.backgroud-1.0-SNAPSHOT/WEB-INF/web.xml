@@ -11,7 +11,7 @@
   </context-param>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/spring-servlet.xml</param-value>
+    <param-value>/WEB-INF/servlet.xml</param-value>
   </context-param>
   <listener>
     <listener-class>com.yang.backgroud.common.utils.ContextListener
@@ -53,7 +53,7 @@
   </filter-mapping>
 
   <!-- Apache Shiro Start -->
-  <filter>
+<!--  <filter>
     <filter-name>shiroFilter</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
     <init-param>
@@ -64,10 +64,10 @@
   <filter-mapping>
     <filter-name>shiroFilter</filter-name>
     <url-pattern>*.do</url-pattern>
-  </filter-mapping>
+  </filter-mapping>-->
   <!-- Apache Shiro End -->
 
   <welcome-file-list>
-    <welcome-file>/WEB-INF/template/login.jsp</welcome-file>
+    <welcome-file>/WEB-INF/index.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

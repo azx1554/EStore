@@ -7,7 +7,6 @@ import com.yang.backgroud.common.persistence.Pages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.annotation.Transactional;
-import redis.clients.jedis.JedisPool;
 
 import java.util.List;
 
@@ -15,9 +14,6 @@ import java.util.List;
 public abstract class CrudService<D extends CrudDAO<T>, T extends BaseEntity<T>> extends BaseService {
 	@Autowired
 	protected ThreadPoolTaskExecutor taskExecutor;
-	
-	@Autowired
-	protected JedisPool jedisPool;
 	
 	@Autowired
 	protected D dao;

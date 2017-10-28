@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Yang.iml" filepath="$PROJECT_DIR$/.idea/Yang.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backgroud/com.yang.backgroud.iml" filepath="$PROJECT_DIR$/backgroud/com.yang.backgroud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backgroud/backgroud.iml" filepath="$PROJECT_DIR$/backgroud/backgroud.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
