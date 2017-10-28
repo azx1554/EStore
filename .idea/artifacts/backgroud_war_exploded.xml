@@ -7,30 +7,19 @@
           <element id="module-output" name="backgroud" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: cn.jpush.api:jiguang-common:1.0.8" />
-          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.3.1" />
-          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.8.0" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
-          <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.6.Final" />
-          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.3" />
           <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:jdk15:2.4" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
-          <element id="library" level="project" name="Maven: com.mg.platform:com.mg.service:0.0.1-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
-          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/mg/platform/com.mg.utils/0.0.1-SNAPSHOT/com.mg.utils-0.0.1-20171001.083129-2.jar" output-file-name="com.mg.utils-0.0.1-SNAPSHOT.jar" />
-          <element id="library" level="project" name="Maven: com.kenai.nbpwr:com-drew-metadata:2.4.0beta1-201201161630" />
-          <element id="library" level="project" name="Maven: com.drewnoakes:metadata-extractor:2.4.0-beta-1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.3" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-nop:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.2.3.RELEASE" />
@@ -50,28 +39,13 @@
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.12" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.4" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.2.4" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-cas:1.2.4" />
-          <element id="library" level="project" name="Maven: org.jasig.cas.client:cas-client-core:3.2.2" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.2.4" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-ehcache:1.2.4" />
-          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" />
           <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.2" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" />
-          <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.3" />
-          <element id="library" level="project" name="Maven: org.javassist:javassist:3.15.0-GA" />
-          <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
-          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" />
-          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
-          <element id="library" level="project" name="Maven: io.netty:netty:3.7.0.Final" />
-          <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
-          <element id="library" level="project" name="Maven: redis.clients:jedis:2.6.2" />
-          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.0" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.8-beta3" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -12,7 +12,7 @@
 
 	<context:annotation-config />
 
-	<context:component-scan base-package="com.yang.backgroud" use-default-filters="false" >
+	<context:component-scan base-package="com.yang.background" use-default-filters="false" >
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>  
 	</context:component-scan>  
 
@@ -35,12 +35,12 @@
 		</property>
 	</bean>
 
-	<bean id="baseInterceptor" class="com.yang.backgroud.common.interceptor.BaseInterceptor" autowire="byName">
+	<bean id="baseInterceptor" class="com.yang.background.common.interceptor.BaseInterceptor" autowire="byName">
 	</bean>
 	
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/template/" />
+		<property name="prefix" value="/WEB-INF/page/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 	

@@ -41,7 +41,7 @@
 
 	<!-- 插件配置 -->
 	<plugins>
-		<plugin interceptor="com.yang.background.common.persistence.interceptor.PaginationInterceptor" />
+		<plugin interceptor="com.yang.backgroud.common.persistence.interceptor.PaginationInterceptor" />
 	</plugins>
 
 </configuration>
