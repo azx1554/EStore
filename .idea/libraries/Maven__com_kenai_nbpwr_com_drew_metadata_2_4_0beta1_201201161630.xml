@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.kenai.nbpwr:com-drew-metadata:2.4.0beta1-201201161630">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/kenai/nbpwr/com-drew-metadata/2.4.0beta1-201201161630/com-drew-metadata-2.4.0beta1-201201161630.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/kenai/nbpwr/com-drew-metadata/2.4.0beta1-201201161630/com-drew-metadata-2.4.0beta1-201201161630-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/kenai/nbpwr/com-drew-metadata/2.4.0beta1-201201161630/com-drew-metadata-2.4.0beta1-201201161630-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
