@@ -2,8 +2,11 @@
         "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
-    <display-name>EStore后台</display-name>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+<display-name>EStore后台</display-name>
     <context-param>
         <param-name>webAppRootKey</param-name>
         <param-value>spring.root</param-value>
@@ -13,7 +16,7 @@
         <param-value>/WEB-INF/servlet.xml</param-value>
     </context-param>
     <listener>
-        <listener-class>com.yang.backgroud.common.utils.ContextListener
+        <listener-class>com.yang.background.common.utils.ContextListener
         </listener-class>
     </listener>
     <context-param>

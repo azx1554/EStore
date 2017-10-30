@@ -13,8 +13,16 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
 %>
-<c:set var="base" value="${pageContext.request.contextPath}" />
+<c:set var="base" value="<%=basePath%>" />
 <!-- Bootstrap CSS -->
-<link href="<%=basePath%>/css/bootstrap.min.css" rel="stylesheet">
+<link href="${base}/css/bootstrap.min.css" rel="stylesheet">
 <!-- bootstrap theme -->
-<link href="<%=basePath%>/css/bootstrap-theme.css" rel="stylesheet">
+<link href="${base}/css/bootstrap-theme.css" rel="stylesheet">
+
+<script type="text/javascript" src="${base}/js/common.js"></script>
+<!--jQuery-->
+<script type="text/javascript" src="${base}/js/jquery.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+<!--[if lt IE 9]-->
+<script type="text/javascript" src="${base}/js/html5shiv.js"></script>
+<!--[endif]-->
